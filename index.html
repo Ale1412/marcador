@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Ale's scoreboard</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Marcador Deportivo</h1>
+        <div class="scoreboard">
+          <div class="team" contenteditable="true" id="team1">Nombre del 1</div>
+          <div class="time" contenteditable="true" id="time">00:00</div>
+          <div class="team" contenteditable="true" id="team2">Nombre del 2</div>
+        </div>
+        <div class="details">
+          <p>Faltas: <span id="faltas">0</span><button class="dark-mode" onclick="incrementFaltas()">+</button><button class="dark-mode" onclick="decrementFaltas()">-</button></p>
+          <p>Anotaciones: <span id="anotaciones">0</span><button class="dark-mode" onclick="incrementAnotaciones()">+</button><button class="dark-mode" onclick="decrementAnotaciones()">-</button></p>
+          <p>Periodo:
+            <select id="periodo" contenteditable="true">
+              <option value="Primer tiempo">Primer tiempo</option>
+              <option value="Segundo tiempo">Segundo tiempo</option>
+            </select>
+          </p>
+        </div>
+        <p>Fecha y hora actual: <span id="fecha-hora"></span></p>
+        <button id="boto" onclick="toggleTimer()">Iniciar / Finalizar Tiempo</button>
+        <button id="boto" onclick="resetTimer()">Reiniciar Tiempo</button>
+        <div class="dark-mode-toggle">
+          <button onclick="toggleDarkMode()">Modo Oscuro</button>
+        </div>
+        <div id="confetti-container"></div>
+      </div>
+    
+      <script src="js/particles.js"></script>
+      <script src="script.js"></script>
+</body>
+</html>

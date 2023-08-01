@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+h1 {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.team {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+.time {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  flex: 2;
+
+  padding: 5px;
+}
+.details {
+  text-align: center;
+  margin: 20px 0;
+}
+.details p {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details span {
+  margin-right: 5px;
+}
+.details button {
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.details button.dark-mode {
+  background-color: #6C3483;
+  color: #fff;
+}
+button{
+margin: 3px;
+}
+#periodo{
+    border: none;
+}
+#boto{
+    display: flex;
+    border-radius: 3px  ;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+  background-color: #031D44;
+  color: #6C3483;
+}
+.container.dark-mode {
+  background-color: #073763;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+.details button.dark-mode {
+  border: 1px solid #6C3483;
+  border-radius: 3px;
+}
+
+/* Estilos para el modo claro */
+body:not(.dark-mode) {
+  background-color: #f0f0f0;
+  color: #333;
+}
+.container:not(.dark-mode) {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.team:not(.dark-mode) {
+  border: 1px solid #ccc;
+}
+/* .time:not(.dark-mode) {
+  border: 1px solid #ccc;
+} */
+.details button:not(.dark-mode) {
+  color: #fff;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+.dark-mode-toggle {
+  text-align: center;
+  margin-top: 20px;
+}
+.dark-mode-toggle button {
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 3px;
+  color: white;
+  background-color: #6C3483;
+}
